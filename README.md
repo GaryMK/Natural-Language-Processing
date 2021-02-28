@@ -107,6 +107,44 @@ Word2Vec也使用了CBOW与Skip-Gram来训练模型与得到词向量，但是�
 
 #### Negative Sampling
 
+#### 混淆矩阵
+
+#### 词云
+
+#### TF-IDF
+
+### GAN
+
+判别器：分辨出生成的和真实的
+
+生成器：生成可以骗过判别器的
+
+损失函数：一方面要让判别器分辨能力更强，另一方面要让生成器更真
+
+### DCGAN
+
+判别模型：使用带步长的卷积（strided convolutions）取代了的空间池化（spatial pooling），容许网络学习自己的空间下采样（spatial downsampling）
+
+生成模型：使用微步幅卷积（fractional strided），容许它学习自己的空间上采样（spatial unsampling）
+
+激活函数：LeakyReLU
+
+Batch Normalization 批标准化：解决因糟糕的初始化引起的训练问题，使得梯度能传播更深层次。Batch Normalization 证明了生成模型初始化的重要性，避免生成模型崩溃：生成的所有样本都在一个点上（样本相同），这是训练GANs经常遇到的失败现象。
+
+> 梯度消失，梯度爆炸
+
+### RNN
+
+### LSTM
+
+C：控制参数
+
+决定什么样的信息会被保留什么样的会被遗忘
+
+### Style-Transfer
+
+### Seq2Seq：机器翻译
+
 ## 项目实战
 
 **[Task1: 影评情感分类]()**
